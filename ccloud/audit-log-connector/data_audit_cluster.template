@@ -1,3 +1,0 @@
-bootstrap.servers=:AUDIT_LOG_CLUSTER_BOOTSTRAP_SERVERS:
-sasl.username=:AUDIT_LOG_CLUSTER_API_KEY:
-sasl.password=:AUDIT_LOG_CLUSTER_API_SECRET:
