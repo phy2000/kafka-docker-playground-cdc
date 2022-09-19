@@ -18,8 +18,30 @@ Run stop script
 ```
 $ ./stop.sh
 ```
+## Show content of CUSTOMERS table:
+```
+$ ./showtables.sh
+```
 
-##  Details of what the script is doing
+## Create the signal table
+This creates the signal table so we can trigger incremental snapshots
+```
+./createsignal.sh
+```
+## Monitor the CDC topic for CUSTOMERS table
+This will create an avro consumer to read the CDC stream from the customers table.
+It will use a default consumer group unless overridden by command line
+```
+$ ./readtopic.sh [consumer-group]
+```
+## Send a signal to the connector to  take an incremental snapshot
+```
+$ ./sendsignal.sh
+```
+
+#  Details of what the base scripts are doing
+
+### startall.sh
 
 This will create a single broker cluster with the following components:
 - Kafka Connect with
@@ -45,7 +67,6 @@ See the original examples:
 - [JDBC PostgreSQL source](../../connect/connect-jdbc-postgresql-source)
 - [JDBC PostgreSQL sink](../../connect/connect-jdbc-postgresql-sink)
 
-Show content of CUSTOMERS table:
 
 
 - Control Center is reachable at [http://127.0.0.1:9021](http://127.0.0.1:9021])
