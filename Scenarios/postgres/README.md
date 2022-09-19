@@ -6,6 +6,16 @@
 
 Testbed for CDC onboarding at Accenture
 
+## To clone this branch:
+```
+git clone git@github.com:phy2000/kafka-docker-playground-cdc.git
+# OR
+git clone https://github.com/phy2000/kafka-docker-playground-cdc
+
+cd kafka-docker-playground-cdc/Scenarios/postgres
+git checkout Proquire-LLC
+```
+
 ## How to run
 
 Run start script
