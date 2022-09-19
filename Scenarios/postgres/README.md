@@ -13,7 +13,7 @@ git clone git@github.com:phy2000/kafka-docker-playground-cdc.git
 git clone https://github.com/phy2000/kafka-docker-playground-cdc
 
 cd kafka-docker-playground-cdc/Scenarios/postgres
-git checkout Proquire-LLC
+git checkout Scenario-1
 ```
 
 ## How to run
