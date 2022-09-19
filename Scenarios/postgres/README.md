@@ -4,7 +4,7 @@
 
 ## Objective
 
-Testbed for CDC onboarding at Accenture
+Testbed for CDC onboarding Scenarios
 
 ## To clone this branch:
 ```
